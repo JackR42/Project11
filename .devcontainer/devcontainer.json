@@ -1,0 +1,7 @@
+{
+    "name": "MyCodeSpace",
+    // The dockerfile will be at te root of the project
+    "build": {"dockerfile": "Dockerfile"},
+    // Automatically start the app in subsequent sessions
+    "postStartCommand": "docker-compose up -d"
+}
