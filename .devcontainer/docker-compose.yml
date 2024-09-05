@@ -1,7 +1,7 @@
 version: "3.7"
 
 services:
-  mylab:
+  mylab1:
     container_name: "svr1"
     image: mcr.microsoft.com/mssql/server:2022-latest
     environment:
@@ -10,6 +10,7 @@ services:
     ports:
       - "1401:1433"
 
+  mylab2:
     container_name: "svr2"
     image: mcr.microsoft.com/mssql/server:2022-latest
     environment:
