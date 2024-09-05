@@ -9,3 +9,11 @@ services:
       - SA_PASSWORD=P@ssw0rd
     ports:
       - "1401:1433"
+
+    container_name: "svr2"
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=P@ssw0rd
+    ports:
+      - "1402:1433"
