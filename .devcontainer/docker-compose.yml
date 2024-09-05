@@ -1,19 +1,11 @@
-version: '3.3'
+version: "3.7"
 
 services:
-  mssql1:
-    container_name: svr1
+  mylab:
+    container_name: "svr1"
     image: mcr.microsoft.com/mssql/server:2022-latest
     environment:
-      ACCEPT_EULA: "Y"
-      SA_PASSWORD: "ABCabc123."
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=P@ssw0rd
     ports:
-      - 2526:1433
-  mssql2:
-    container_name: svr2
-    image: mcr.microsoft.com/mssql/server:2022-latest
-    environment:
-      ACCEPT_EULA: "Y"
-      SA_PASSWORD: "ABCabc123."
-    ports:
-      - 2527:1433
+      - "1401:1433"
