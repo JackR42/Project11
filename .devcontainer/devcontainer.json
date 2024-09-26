@@ -1,6 +1,10 @@
 {
-    "name": "MyCodeSpace",
+    "name": "Lab42",
+    "workspaceFolder":"/workspace", 
     // The dockerfile will be at te root of the project
+    "dockerComposeFile"[
+        "docker-compose.yml"
+    ],
     "build": {"dockerfile": "Dockerfile"},
     // Automatically start the app in subsequent sessions
     "postStartCommand": "docker-compose up -d"
